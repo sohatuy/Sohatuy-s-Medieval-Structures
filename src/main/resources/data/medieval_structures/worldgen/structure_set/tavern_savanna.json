@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "medieval_structures:tavern_savanna",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 26,
+    "separation": 25,
+    "salt": 1410284901
+  }
+}

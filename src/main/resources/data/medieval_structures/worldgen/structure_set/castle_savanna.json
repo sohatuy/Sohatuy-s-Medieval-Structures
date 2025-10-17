@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "medieval_structures:castle_savanna",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 31,
+    "separation": 30,
+    "salt": 1433637055
+  }
+}
