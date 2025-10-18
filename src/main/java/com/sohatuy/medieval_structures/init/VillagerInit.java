@@ -1,23 +1,22 @@
 package com.sohatuy.medieval_structures.init;
 
+import com.google.common.collect.ImmutableSet;
 import com.sohatuy.medieval_structures.MedievalStructuresMod;
-import net.minecraft.entity.passive.EntityVillager;
-import net.minecraft.init.Items;
-import net.minecraftforge.fml.common.registry.VillagerRegistry;
-import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession;
-import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerCareer;
-import net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerTrades;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.npc.VillagerProfession;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class VillagerInit {
-    public static VillagerProfession HERMIT;
-  
-    public static void registerVillagers() {
-        HERMIT = new VillagerProfession(MedievalStructuresMod.MODID, MedievalStructuresMod.MODID + ":textures/models/hermit.png", MedievalStructuresMod.MODID + ":textures/models/hermit_zombie.png");
-        VillagerRegistry.register(HERMIT);
-  
-        VillagerCareer career_example = new VillagerCareer(HERMIT, MedievalStructuresMod.MODID);
-        career_example.addTrade(1,
-                new VillagerTrades.ItemstackForItemstack(Items.DIAMOND, Items.EMERALD, new EntityVillager.PriceInfo(1, 2), new EntityVillager.PriceInfo(3, 4))
-        );
-    }
+    public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS = 
+            DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, MedievalStructuresMod.MODID);
+
+    public static final RegistryObject<VillagerProfession> HERMIT = VILLAGER_PROFESSIONS.register("hermit",
+            () -> new VillagerProfession("hermit", 
+                    holder -> holder.is(POITypesInit.HERMIT_POI.getKey()), 
+                    holder -> holder.is(POITypesInit.HERMIT_POI.getKey()),
+                    ImmutableSet.of(), 
+                    ImmutableSet.of(), 
+                    SoundEvents.VILLAGER_WORK_CLERIC)); // You can change the sound
 }
