@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "medieval_structures:hermits_house_plains",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 30,
+    "salt": 316550412
+  }
+}
