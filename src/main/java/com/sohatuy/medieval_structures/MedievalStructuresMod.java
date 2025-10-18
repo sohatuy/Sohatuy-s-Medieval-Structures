@@ -28,12 +28,9 @@ public class MedievalStructuresMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register the Deferred Register to the mod event bus so blocks get registered
         BlockInit.BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
         ItemInit.ITEMS.register(modEventBus);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
