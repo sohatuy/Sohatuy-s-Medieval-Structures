@@ -44,7 +44,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:pumkin_pie",
+          "name": "minecraft:pumpkin_pie",
           "weight": 1,
           "functions": [
             {

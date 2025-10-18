@@ -2,6 +2,7 @@ package com.sohatuy.medieval_structures;
 
 import com.sohatuy.medieval_structures.init.BlockInit;
 import com.sohatuy.medieval_structures.init.ItemInit;
+import com.sohatuy.medieval_structures.init.POITypesInit;
 import com.sohatuy.medieval_structures.init.VillagerInit;
 
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,7 @@ public class MedievalStructuresMod
         BlockInit.BLOCKS.register(modEventBus);
         ItemInit.ITEMS.register(modEventBus);
         VillagerInit.VILLAGER_PROFESSIONS.register(modEventBus);
+        POITypesInit.POI_TYPES.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
