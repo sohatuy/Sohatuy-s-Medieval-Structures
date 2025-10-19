@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ForgeRegistries;
 
 @Mod(MedievalStructuresMod.MODID)
 public class MedievalStructuresMod {
@@ -48,6 +49,9 @@ public class MedievalStructuresMod {
         } else {
             LOGGER.error("Hermit's Table block NOT registered!");
         }
+        LOGGER.info("=== Проверка POI в мире ===");
+    LOGGER.info("POI Types: {}", ForgeRegistries.POI_TYPES.getValues());
+    LOGGER.info("Villager Professions: {}", ForgeRegistries.VILLAGER_PROFESSIONS.getValues());
     });
     }
 
