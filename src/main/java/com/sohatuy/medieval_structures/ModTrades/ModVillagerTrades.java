@@ -50,6 +50,9 @@ public class ModVillagerTrades {
             ResourceLocation itemId9 = ResourceLocation.fromNamespaceAndPath("dungeons_and_combat", "iron_rapier");
             Item IRON_RAPIER = ForgeRegistries.ITEMS.getValue(itemId9);
 
+            ResourceLocation itemId10 = ResourceLocation.fromNamespaceAndPath("enigmaticlegacy", "magnet_ring");
+            Item MAGNET_RING = ForgeRegistries.ITEMS.getValue(itemId10);
+
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 4),
                 ItemStack.EMPTY,
@@ -142,11 +145,11 @@ public class ModVillagerTrades {
                 0.01f // priceMultiplier - множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                new ItemStack(Items.EMERALD, 6),
+                new ItemStack(Items.EMERALD, 7),
                 ItemStack.EMPTY,
-                new ItemStack(GOLDEN_RING, 1),
+                new ItemStack(MAGNET_RING, 1),
                 8, // maxUses - максимальное использование
-                20, // xp - опыт
+                25, // xp - опыт
                 0.01f // priceMultiplier - множитель цены
             ));
 
