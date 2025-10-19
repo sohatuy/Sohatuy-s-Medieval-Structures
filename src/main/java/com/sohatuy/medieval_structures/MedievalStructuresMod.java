@@ -2,8 +2,6 @@ package com.sohatuy.medieval_structures;
 
 import com.sohatuy.medieval_structures.init.BlockInit;
 import com.sohatuy.medieval_structures.init.ItemInit;
-import com.sohatuy.medieval_structures.init.POITypesInit; // ДОБАВЬТЕ ЭТОТ ИМПОРТ
-import com.sohatuy.medieval_structures.init.VillagerInit;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,8 +25,6 @@ public class MedievalStructuresMod {
         // Регистрируем ВСЕ deferred registers в правильном порядке
         BlockInit.BLOCKS.register(modEventBus);
         ItemInit.ITEMS.register(modEventBus);
-        POITypesInit.POI_TYPES.register(modEventBus); // ← ДОБАВЬТЕ ЭТУ СТРОЧКУ!
-        VillagerInit.VILLAGER_PROFESSIONS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
