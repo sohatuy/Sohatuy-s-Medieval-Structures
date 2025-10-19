@@ -68,24 +68,42 @@ description='''${mod_description}'''
 [[dependencies.medieval_structures]]
     modId="farmersdelight"
     mandatory=true
-    versionRange="[0,)"
+    versionRange="[1,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.medieval_structures]]
     modId="quark"
     mandatory=true
-    versionRange="[0,)"
+    versionRange="[4,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.medieval_structures]]
     modId="alcocraftplus"
     mandatory=true
-    versionRange="[0,)"
+    versionRange="[2,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.medieval_structures]]
     modId="mcwfurnitures"
     mandatory=true
-    versionRange="[0,)"
+    versionRange="[3,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.medieval_structures]]
+    modId="enigmaticlegacy"
+    mandatory=true
+    versionRange="[2,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.medieval_structures]]
+    modId="morevillagers"
+    mandatory=true
+    versionRange="[5,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.medieval_structures]]
+    modId="dungeons_and_combat"
+    mandatory=true
+    versionRange="[1,2,)"
     ordering="NONE"
     side="BOTH"
