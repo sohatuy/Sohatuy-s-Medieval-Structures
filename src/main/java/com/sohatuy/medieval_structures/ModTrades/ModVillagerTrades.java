@@ -32,7 +32,7 @@ public class ModVillagerTrades {
                 0.00f // priceMultiplier - множитель цены
             ));
         }
-        if(event.getType() == VillagerInit.HERMIT_MASTER.get()) {
+        if(event.getType() == VillagerInit.HERMIT.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
 
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(

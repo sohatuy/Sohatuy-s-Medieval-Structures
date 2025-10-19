@@ -43,11 +43,11 @@ public class MedievalStructuresMod {
             LOGGER.info("=== Medieval Structures Debug ===");
             
             // Проверяем все компоненты
-           if (VillagerInit.HERMIT_MASTER.isPresent()) {
-    LOGGER.info("✓ Профессия зарегистрирована: {}", VillagerInit.HERMIT_MASTER.getId());
+           if (VillagerInit.HERMIT.isPresent()) {
+    LOGGER.info("✓ Профессия зарегистрирована: {}", VillagerInit.HERMIT.getId());
     
     // ИСПРАВЛЕННАЯ ПРОВЕРКА - новый синтаксис
-    VillagerProfession profession = VillagerInit.HERMIT_MASTER.get();
+    VillagerProfession profession = VillagerInit.HERMIT.get();
     
     // Получаем POI через acquirableJobSite() или heldJobSite()
     var jobSiteHolder = profession.heldJobSite();
@@ -67,7 +67,7 @@ public class MedievalStructuresMod {
     public void onServerStarting(ServerStartingEvent event) {
         // Финальная проверка при запуске сервера
         LOGGER.info("=== Запуск сервера - проверка профессий ===");
-        LOGGER.info("HERMIT_MASTER профессия: {}", VillagerInit.HERMIT_MASTER.get());
+        LOGGER.info("HERMIT_MASTER профессия: {}", VillagerInit.HERMIT.get());
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

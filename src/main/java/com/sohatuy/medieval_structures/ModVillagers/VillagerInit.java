@@ -25,9 +25,9 @@ public class VillagerInit {
             1
         ));
 
-    public static final RegistryObject<VillagerProfession> HERMIT_MASTER =
-        VILLAGER_PROFESSIONS.register("hermit_master", () -> new VillagerProfession(
-            "hermit_master",
+    public static final RegistryObject<VillagerProfession> HERMIT =
+        VILLAGER_PROFESSIONS.register("hermit", () -> new VillagerProfession(
+            "hermit",
             holder -> holder.is(HERMIT_POI.getKey()),
             holder -> holder.is(HERMIT_POI.getKey()),
             ImmutableSet.of(),
