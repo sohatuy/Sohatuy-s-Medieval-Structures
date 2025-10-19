@@ -2,6 +2,7 @@ package com.sohatuy.medieval_structures.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import com.sohatuy.medieval_structures.MedievalStructuresMod;
@@ -20,7 +21,7 @@ public class ModPoiTagsProvider extends PoiTypeTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
+    protected void addTags(@Nonnull HolderLookup.Provider provider) {
         tag(PoiTypeTags.ACQUIRABLE_JOB_SITE)
                 .addOptional(ResourceLocation.fromNamespaceAndPath(MedievalStructuresMod.MODID, "hermit_poi"));
     }

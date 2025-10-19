@@ -1,6 +1,5 @@
 package com.sohatuy.medieval_structures.ModVillagers;
 
-
 import com.google.common.collect.ImmutableSet;
 import com.sohatuy.medieval_structures.MedievalStructuresMod;
 import com.sohatuy.medieval_structures.init.BlockInit;
@@ -14,19 +13,37 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class VillagerInit {
     public static final DeferredRegister<PoiType> POI_TYPES = 
-    DeferredRegister.create(ForgeRegistries.POI_TYPES, MedievalStructuresMod.MODID);
-    public static final DeferredRegister<VillagerProfession> VILLAGER_PROFFESIONS = 
-    DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, MedievalStructuresMod.MODID);
+        DeferredRegister.create(ForgeRegistries.POI_TYPES, MedievalStructuresMod.MODID);
+    public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS = 
+        DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, MedievalStructuresMod.MODID);
 
-    public static final RegistryObject<PoiType> HERMIT_POI = POI_TYPES.register("hermit_poi", () -> new PoiType(ImmutableSet.copyOf(BlockInit.HERMITS_TABLE.get().getStateDefinition().getPossibleStates()), 50, 1));
-
+    public static final RegistryObject<PoiType> HERMIT_POI = POI_TYPES.register("hermit_poi", 
+        () -> new PoiType(ImmutableSet.copyOf(BlockInit.HERMITS_TABLE.get().getStateDefinition().getPossibleStates()), 1, 1));
 
     public static final RegistryObject<VillagerProfession> HERMIT_MASTER =
-    VILLAGER_PROFFESIONS.register("hermit_master", () -> new VillagerProfession(
-        "hermit_master",
-        holder -> holder.is(HERMIT_POI.getKey()),
-        holder -> holder.is(HERMIT_POI.getKey()),
-        ImmutableSet.of(),
-        ImmutableSet.of(),
-        SoundEvents.VILLAGER_WORK_ARMORER));
+        VILLAGER_PROFESSIONS.register("hermit_master", () -> new VillagerProfession(
+            "hermit_master",
+            holder -> holder.is(HERMIT_POI.getKey()),
+            holder -> holder.is(HERMIT_POI.getKey()),
+            ImmutableSet.of(),
+            ImmutableSet.of(),
+            SoundEvents.VILLAGER_WORK_ARMORER));
+
+    public static void registerPOIs() {
+        final org.apache.logging.log4j.Logger LOGGER = org.apache.logging.log4j.LogManager.getLogger();
+        try {
+            // DeferredRegister автоматически регистрирует POI, нам нужно только убедиться,
+            // что он загружен в память игры
+            LOGGER.info("POI 'hermit_poi' зарегистрирован через DeferredRegister");
+            
+            // Для отладки можно проверить, что POI действительно зарегистрирован
+            if (HERMIT_POI.isPresent()) {
+                LOGGER.info("POI 'hermit_poi' успешно загружен: {}", HERMIT_POI.getId());
+            } else {
+                LOGGER.warn("POI 'hermit_poi' не загружен!");
+            }
+        } catch (Exception e) {
+            LOGGER.error("Ошибка при проверке POI: {}", e.getMessage());
+        }
+    }
 }

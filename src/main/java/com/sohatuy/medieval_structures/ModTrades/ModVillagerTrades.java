@@ -26,7 +26,7 @@ public class ModVillagerTrades {
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 3),
                 ItemStack.EMPTY,
-                new ItemStack(BlockInit.HERMITS_TABLE_ITEM.get(), 2), // Исправил количество изумрудов
+                new ItemStack(BlockInit.HERMITS_TABLE.get(), 2), // Исправил количество изумрудов
                 15, // maxUses - максимальное использование
                 10, // xp - опыт
                 0.00f // priceMultiplier - множитель цены
@@ -38,7 +38,7 @@ public class ModVillagerTrades {
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 3),
                 ItemStack.EMPTY,
-                new ItemStack(BlockInit.HERMITS_TABLE_ITEM.get(), 2), // Исправил количество изумрудов
+                new ItemStack(BlockInit.HERMITS_TABLE.get(), 2),
                 15, // maxUses - максимальное использование
                 10, // xp - опыт
                 0.00f // priceMultiplier - множитель цены
