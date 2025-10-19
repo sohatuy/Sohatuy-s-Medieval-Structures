@@ -24,9 +24,9 @@ public class MedievalStructuresMod {
         modEventBus.addListener(this::commonSetup);
 
         // Регистрируем ВСЕ deferred registers в правильном порядке
+        VillagerInit.POI_TYPES.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
         ItemInit.ITEMS.register(modEventBus);
-        VillagerInit.POI_TYPES.register(modEventBus);
         VillagerInit.VILLAGER_PROFFESIONS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
