@@ -17,8 +17,13 @@ public class VillagerInit {
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS = 
         DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, MedievalStructuresMod.MODID);
 
+    // ИСПРАВЛЕНО: Используем Supplier для ленивой инициализации
     public static final RegistryObject<PoiType> HERMIT_POI = POI_TYPES.register("hermit_poi", 
-        () -> new PoiType(ImmutableSet.copyOf(BlockInit.HERMITS_TABLE.get().getStateDefinition().getPossibleStates()), 1, 1));
+        () -> new PoiType(
+            ImmutableSet.copyOf(BlockInit.HERMITS_TABLE.get().getStateDefinition().getPossibleStates()), 
+            1, 
+            1
+        ));
 
     public static final RegistryObject<VillagerProfession> HERMIT_MASTER =
         VILLAGER_PROFESSIONS.register("hermit_master", () -> new VillagerProfession(
@@ -27,23 +32,24 @@ public class VillagerInit {
             holder -> holder.is(HERMIT_POI.getKey()),
             ImmutableSet.of(),
             ImmutableSet.of(),
-            SoundEvents.VILLAGER_WORK_ARMORER));
+            SoundEvents.VILLAGER_WORK_ARMORER
+        ));
 
     public static void registerPOIs() {
         final org.apache.logging.log4j.Logger LOGGER = org.apache.logging.log4j.LogManager.getLogger();
         try {
-            // DeferredRegister автоматически регистрирует POI, нам нужно только убедиться,
-            // что он загружен в память игры
-            LOGGER.info("POI 'hermit_poi' зарегистрирован через DeferredRegister");
+            // Принудительно загружаем POI в реестр
+            PoiType poiType = HERMIT_POI.get();
+            LOGGER.info("POI 'hermit_poi' успешно зарегистрирован: {}", poiType);
             
-            // Для отладки можно проверить, что POI действительно зарегистрирован
-            if (HERMIT_POI.isPresent()) {
-                LOGGER.info("POI 'hermit_poi' успешно загружен: {}", HERMIT_POI.getId());
-            } else {
-                LOGGER.warn("POI 'hermit_poi' не загружен!");
+            // Проверяем связанный блок
+            if (BlockInit.HERMITS_TABLE.isPresent()) {
+                LOGGER.info("Связанный блок: {}", BlockInit.HERMITS_TABLE.getId());
             }
+            
         } catch (Exception e) {
-            LOGGER.error("Ошибка при проверке POI: {}", e.getMessage());
+            LOGGER.error("Ошибка при регистрации POI: {}", e.getMessage());
+            e.printStackTrace();
         }
     }
 }

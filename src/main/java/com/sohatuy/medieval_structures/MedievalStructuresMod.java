@@ -4,6 +4,7 @@ import com.sohatuy.medieval_structures.ModVillagers.VillagerInit;
 import com.sohatuy.medieval_structures.init.BlockInit;
 import com.sohatuy.medieval_structures.init.ItemInit;
 
+import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -25,39 +26,48 @@ public class MedievalStructuresMod {
 
         modEventBus.addListener(this::commonSetup);
 
-        // Регистрируем ВСЕ deferred registers в правильном порядке
-        BlockInit.BLOCKS.register(modEventBus);
-        ItemInit.ITEMS.register(modEventBus);
-        VillagerInit.POI_TYPES.register(modEventBus);
-        VillagerInit.VILLAGER_PROFESSIONS.register(modEventBus); // Исправлена опечатка
+        // ИСПРАВЛЕНО: Правильный порядок регистрации
+        BlockInit.BLOCKS.register(modEventBus);    // Сначала блоки
+        ItemInit.ITEMS.register(modEventBus);       // Потом предметы
+        VillagerInit.POI_TYPES.register(modEventBus); // Затем POI
+        VillagerInit.VILLAGER_PROFESSIONS.register(modEventBus); // И только потом профессии
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-        VillagerInit.registerPOIs();
-        
-        // Дополнительная отладка
-        LOGGER.info("=== Medieval Structures Debug ===");
-        LOGGER.info("POI registered: {}", VillagerInit.HERMIT_POI.getId());
-        LOGGER.info("Profession registered: {}", VillagerInit.HERMIT_MASTER.getId());
-        
-        // Проверка, что блок существует
-        if (BlockInit.HERMITS_TABLE.isPresent()) {
-            LOGGER.info("Hermit's Table block registered: {}", BlockInit.HERMITS_TABLE.getId());
-        } else {
-            LOGGER.error("Hermit's Table block NOT registered!");
-        }
-        LOGGER.info("=== Проверка POI в мире ===");
-    LOGGER.info("POI Types: {}", ForgeRegistries.POI_TYPES.getValues());
-    LOGGER.info("Villager Professions: {}", ForgeRegistries.VILLAGER_PROFESSIONS.getValues());
-    });
+            VillagerInit.registerPOIs();
+            
+            // Улучшенная отладка
+            LOGGER.info("=== Medieval Structures Debug ===");
+            
+            // Проверяем все компоненты
+           if (VillagerInit.HERMIT_MASTER.isPresent()) {
+    LOGGER.info("✓ Профессия зарегистрирована: {}", VillagerInit.HERMIT_MASTER.getId());
+    
+    // ИСПРАВЛЕННАЯ ПРОВЕРКА - новый синтаксис
+    VillagerProfession profession = VillagerInit.HERMIT_MASTER.get();
+    
+    // Получаем POI через acquirableJobSite() или heldJobSite()
+    var jobSiteHolder = profession.heldJobSite();
+    LOGGER.info("  - Job site predicate: {}", jobSiteHolder);
+    
+    // Альтернативный способ проверки POI состояний
+    LOGGER.info("  - POI Key: {}", VillagerInit.HERMIT_POI.getKey());
+}
+            
+            // Проверяем в реестрах Forge
+            LOGGER.info("Все POI в реестре: {}", ForgeRegistries.POI_TYPES.getKeys());
+            LOGGER.info("Все профессии в реестре: {}", ForgeRegistries.VILLAGER_PROFESSIONS.getKeys());
+        });
     }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Можно добавить дополнительную логику при запуске сервера
+        // Финальная проверка при запуске сервера
+        LOGGER.info("=== Запуск сервера - проверка профессий ===");
+        LOGGER.info("HERMIT_MASTER профессия: {}", VillagerInit.HERMIT_MASTER.get());
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
