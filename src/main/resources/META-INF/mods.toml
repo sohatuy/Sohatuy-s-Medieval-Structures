@@ -72,7 +72,7 @@ description='''${mod_description}'''
     ordering="NONE"
     side="BOTH"
 [[dependencies.medieval_structures]]
-    modId="morevillagers"
+    modId="more_villagers"
     mandatory=true
     versionRange="[0,)"
     ordering="NONE"
