@@ -1,4 +1,5 @@
 {
     "block.medieval_structures.hermits_table":"Стол Отшельника",
-    "title.minecraft.medieval_structures.hermit":"Отшельник"
+    "entity.minecraft.villager.medieval_structures.hermit": "Отшельник",
+    "entity.minecraft.villager.hermit": "Отшельник"
 }
