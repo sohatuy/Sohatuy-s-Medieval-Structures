@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "translate": "advancements.medieval_structures.adv2.title",
+            "obfuscated": false
+        },
+        "description": {
+            "translate": "advancements.medieval_structures.adv2.description"
+        },
+        "icon": {
+            "item": "medieval_structures:hermits_table"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+    "adv2": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "medieval_structures:hermits_houses"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+    "parent":"root"
+}

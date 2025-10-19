@@ -1,4 +1,10 @@
 {
+    "advancements.medieval_structures.root.title":"Sohatuy's Medieval Structures",
+    "advancements.medieval_structures.root.description":"The Middle Ages!",
+    "advancements.medieval_structures.adv1.title":"Resting time..",
+    "advancements.medieval_structures.adv1.description":"Find a tavern",
+    "advancements.medieval_structures.adv2.title":"Hi!You live here?",
+    "advancements.medieval_structures.adv2.description":"Find a hermit's hut",
     "block.medieval_structures.hermits_table":"Hermits table",
     "entity.minecraft.villager.medieval_structures.hermit": "Hermit",
     "entity.minecraft.villager.hermit": "Hermit"
