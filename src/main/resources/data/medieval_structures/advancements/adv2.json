@@ -34,5 +34,9 @@
             }
         }
     },
+<<<<<<< HEAD
     "parent":"medieval_structures:root"
+=======
+    "parent":"root"
+>>>>>>> 835ac557e6664314e9522d76bac3fef6c532d346
 }
