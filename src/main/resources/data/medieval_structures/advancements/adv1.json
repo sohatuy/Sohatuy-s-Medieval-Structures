@@ -16,20 +16,13 @@
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "adv1": {
-            "trigger": "minecraft:location",
+        "enter_light_level_2": {
+            "trigger": "minecraft:enter_block",
             "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "location": {
-                                "structures": "medieval_structures:taverns"
-                            }
-                        }
-                    }
-                ]
+                "block": "minecraft:light",
+                "block_state": {
+                    "level": "2"
+                }
             }
         }
     },
