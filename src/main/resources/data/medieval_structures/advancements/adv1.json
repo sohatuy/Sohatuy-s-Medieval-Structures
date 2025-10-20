@@ -1,14 +1,13 @@
 {
     "display": {
         "title": {
-            "translate": "advancements.medieval_structures.adv1.title",
-            "obfuscated": false
+            "translate": "advancements.medieval_structures.adv1.title"
         },
         "description": {
             "translate": "advancements.medieval_structures.adv1.description"
         },
         "icon": {
-            "item": "minecraft:camfire"
+            "item": "minecraft:campfire"
         },
         "frame": "task",
         "show_toast": true,
@@ -17,22 +16,22 @@
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-    "adv1": {
-      "trigger": "minecraft:location",
-      "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "location": {
-                "structure": "medieval_structures:taverns"
-              }
+        "adv1": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structures": "medieval_structures:taverns"
+                            }
+                        }
+                    }
+                ]
             }
-          }
-        ]
-      }
-    }
-  },
-    "parent":"root"
+        }
+    },
+    "parent": "medieval_structures:root"
 }
