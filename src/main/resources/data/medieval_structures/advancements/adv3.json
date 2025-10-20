@@ -1,14 +1,14 @@
 {
     "display": {
         "title": {
-            "translate": "advancements.medieval_structures.adv2.title",
+            "translate": "advancements.medieval_structures.adv3.title",
             "obfuscated": false
         },
         "description": {
-            "translate": "advancements.medieval_structures.adv2.description"
+            "translate": "advancements.medieval_structures.adv3.description"
         },
         "icon": {
-            "item": "medieval_structures:hermits_table"
+            "item": "minecraft:stone_bricks"
         },
         "frame": "task",
         "show_toast": true,
@@ -26,7 +26,7 @@
                         "entity": "this",
                         "predicate": {
                             "location": {
-                                "structures": "medieval_structures:hermits_houses"
+                                "structures": "medieval_structures:castles"
                             }
                         }
                     }
