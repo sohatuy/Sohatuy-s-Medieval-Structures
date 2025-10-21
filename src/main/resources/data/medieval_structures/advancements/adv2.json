@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:root",
+    "parent": "medieval_structures:root",
     "criteria": {
         "hermits_house_plains": {
             "conditions": {

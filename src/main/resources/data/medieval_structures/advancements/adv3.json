@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:root",
+    "parent": "medieval_structures:root",
     "criteria": {
         "castle_plains": {
             "conditions": {
@@ -68,20 +68,18 @@
     },
     "display": {
         "announce_to_chat": true,
-        "title": {
-            "translate": "advancements.medieval_structures.adv3.title"
-        }
-        ,
+        "description": {
+            "translate": "advancements.medieval_structures.adv3.description"
+        },
         "frame": "task",
         "hidden": false,
         "icon": {
             "item": "minecraft:stone_bricks"
         },
         "show_toast": true,
-        "description": {
-            "translate": "advancements.medieval_structures.adv3.description"
+        "title": {
+            "translate": "advancements.medieval_structures.adv3.title"
         }
-        
     },
     "requirements": [
         [

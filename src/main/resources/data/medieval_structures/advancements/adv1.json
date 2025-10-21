@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:root",
+    "parent": "medieval_structures:root",
     "criteria": {
         "tavern_plains": {
             "conditions": {
@@ -25,7 +25,7 @@
                         "entity": "this",
                         "predicate": {
                             "location": {
-                                "structure": "medieval_structures:tavern_spruce"
+                                "structure": "medieval_structures:tavern_savanna"
                             }
                         }
                     }
