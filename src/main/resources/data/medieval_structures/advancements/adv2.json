@@ -1,31 +1,39 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancements.medieval_structures.adv2.title",
-            "obfuscated": false
-        },
-        "description": {
-            "translate": "advancements.medieval_structures.adv2.description"
-        },
-        "icon": {
-            "item": "medieval_structures:hermits_table"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false,
-        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
-    },
     "criteria": {
-        "enter_light_level_1": {
-            "trigger": "minecraft:enter_block",
+        "in_hermit_house_plains": {
+            "trigger": "minecraft:location",
             "conditions": {
-                "block": "minecraft:light",
-                "block_state": {
-                    "level": "1"
-                }
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:hermits_house_plains"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "in_hermit_house_taiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:hermits_house_taiga"
+                            }
+                        }
+                    }
+                ]
             }
         }
     },
-    "parent":"medieval_structures:root"
+    "requirements": [
+        ["in_hermit_house_plains", "in_hermit_house_taiga"]
+    ]
 }

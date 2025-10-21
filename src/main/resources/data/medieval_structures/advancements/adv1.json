@@ -16,15 +16,41 @@
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "enter_light_level_2": {
-            "trigger": "minecraft:enter_block",
+        "tavern_plains": {
+            "trigger": "minecraft:location",
             "conditions": {
-                "block": "minecraft:light",
-                "block_state": {
-                    "level": "2"
+                "location": {
+                    "structure": "medieval_structures:tavern_plains"
+                }
+            }
+        },
+        "tavern_spruce": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "structure": "medieval_structures:tavern_spruce"
+                }
+            }
+        },
+        "tavern_jungle": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "structure": "medieval_structures:tavern_jungle"
+                }
+            }
+        },
+        "tavern_taiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "structure": "medieval_structures:tavern_taiga"
                 }
             }
         }
     },
+    "requirements": [
+        ["tavern_plains", "tavern_spruce", "tavern_jungle", "tavern_taiga"]
+    ],
     "parent": "medieval_structures:root"
 }
