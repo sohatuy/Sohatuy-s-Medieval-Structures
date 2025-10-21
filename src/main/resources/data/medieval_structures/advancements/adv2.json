@@ -1,7 +1,7 @@
 {
+    "parent": "minecraft:root",
     "criteria": {
-        "in_hermit_house_plains": {
-            "trigger": "minecraft:location",
+        "hermits_house_plains": {
             "conditions": {
                 "player": [
                     {
@@ -14,10 +14,10 @@
                         }
                     }
                 ]
-            }
+            },
+            "trigger": "minecraft:location"
         },
-        "in_hermit_house_taiga": {
-            "trigger": "minecraft:location",
+        "hermits_house_spruce": {
             "conditions": {
                 "player": [
                     {
@@ -25,15 +25,35 @@
                         "entity": "this",
                         "predicate": {
                             "location": {
-                                "structure": "medieval_structures:hermits_house_taiga"
+                                "structure": "medieval_structures:hermits_house_spruce"
                             }
                         }
                     }
                 ]
-            }
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.medieval_structures.adv2.description"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "medieval_structures:hermits_table"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.medieval_structures.adv2.title"
         }
     },
     "requirements": [
-        ["in_hermit_house_plains", "in_hermit_house_taiga"]
-    ]
+        [
+            "hermits_house_plains",
+            "hermits_house_spruce"
+        ]
+    ],
+    "sends_telemetry_event": false
 }
