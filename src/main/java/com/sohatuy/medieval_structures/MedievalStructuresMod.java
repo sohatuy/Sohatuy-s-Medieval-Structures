@@ -26,11 +26,10 @@ public class MedievalStructuresMod {
 
         modEventBus.addListener(this::commonSetup);
 
-        // ИСПРАВЛЕНО: Правильный порядок регистрации
-        BlockInit.BLOCKS.register(modEventBus);    // Сначала блоки
-        ItemInit.ITEMS.register(modEventBus);       // Потом предметы
-        VillagerInit.POI_TYPES.register(modEventBus); // Затем POI
-        VillagerInit.VILLAGER_PROFESSIONS.register(modEventBus); // И только потом профессии
+        BlockInit.BLOCKS.register(modEventBus);
+        ItemInit.ITEMS.register(modEventBus);
+        VillagerInit.POI_TYPES.register(modEventBus);
+        VillagerInit.VILLAGER_PROFESSIONS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -38,22 +37,16 @@ public class MedievalStructuresMod {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             VillagerInit.registerPOIs();
-            
-            // Улучшенная отладка
             LOGGER.info("=== Medieval Structures Debug ===");
             
             // Проверяем все компоненты
            if (VillagerInit.HERMIT.isPresent()) {
     LOGGER.info("✓ Профессия зарегистрирована: {}", VillagerInit.HERMIT.getId());
     
-    // ИСПРАВЛЕННАЯ ПРОВЕРКА - новый синтаксис
     VillagerProfession profession = VillagerInit.HERMIT.get();
-    
-    // Получаем POI через acquirableJobSite() или heldJobSite()
+
     var jobSiteHolder = profession.heldJobSite();
     LOGGER.info("  - Job site predicate: {}", jobSiteHolder);
-    
-    // Альтернативный способ проверки POI состояний
     LOGGER.info("  - POI Key: {}", VillagerInit.HERMIT_POI.getKey());
 }
             
@@ -65,7 +58,6 @@ public class MedievalStructuresMod {
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Финальная проверка при запуске сервера
         LOGGER.info("=== Запуск сервера - проверка профессий ===");
         LOGGER.info("HERMIT_MASTER профессия: {}", VillagerInit.HERMIT.get());
     }
@@ -74,7 +66,6 @@ public class MedievalStructuresMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            // Клиентская настройка
         }
     }
 }
