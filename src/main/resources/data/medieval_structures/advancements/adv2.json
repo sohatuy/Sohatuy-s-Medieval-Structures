@@ -48,6 +48,22 @@
                 ]
             },
             "trigger": "minecraft:location"
+        },
+        "hermits_house_jungle": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:hermits_house_jungle"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
         }
     },
     "display": {
@@ -69,7 +85,8 @@
         [
             "hermits_house_plains",
             "hermits_house_taiga",
-            "hermits_house_savanna"
+            "hermits_house_savanna",
+            "hermits_house_jungle"
         ]
     ],
     "sends_telemetry_event": false
