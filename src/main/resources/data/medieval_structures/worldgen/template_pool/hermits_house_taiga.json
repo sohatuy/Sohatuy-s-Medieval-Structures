@@ -1,12 +1,12 @@
 {
-  "name": "medieval_structures:hermits_house_spruce",
+  "name": "medieval_structures:hermits_house_taiga",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "medieval_structures:hermits_house_spruce",
+        "location": "medieval_structures:hermits_house_taiga",
         "projection": "rigid",
         "processors": {
           "processors": [

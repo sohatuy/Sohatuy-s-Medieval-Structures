@@ -17,7 +17,7 @@
             },
             "trigger": "minecraft:location"
         },
-        "hermits_house_spruce": {
+        "hermits_house_taiga": {
             "conditions": {
                 "player": [
                     {
@@ -25,7 +25,7 @@
                         "entity": "this",
                         "predicate": {
                             "location": {
-                                "structure": "medieval_structures:hermits_house_spruce"
+                                "structure": "medieval_structures:hermits_house_taiga"
                             }
                         }
                     }
@@ -68,7 +68,7 @@
     "requirements": [
         [
             "hermits_house_plains",
-            "hermits_house_spruce",
+            "hermits_house_taiga",
             "hermits_house_savanna"
         ]
     ],
