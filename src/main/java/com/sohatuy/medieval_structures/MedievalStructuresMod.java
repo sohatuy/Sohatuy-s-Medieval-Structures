@@ -43,8 +43,7 @@ public class MedievalStructuresMod {
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        LOGGER.info("=== Запуск сервера - проверка профессий ===");
-        LOGGER.info("HERMIT_MASTER профессия: {}", VillagerInit.HERMIT.get());
+        
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
