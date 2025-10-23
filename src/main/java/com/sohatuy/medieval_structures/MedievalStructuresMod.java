@@ -4,7 +4,6 @@ import com.sohatuy.medieval_structures.ModVillagers.VillagerInit;
 import com.sohatuy.medieval_structures.init.BlockInit;
 import com.sohatuy.medieval_structures.init.ItemInit;
 
-import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -14,7 +13,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 
 @Mod(MedievalStructuresMod.MODID)
 public class MedievalStructuresMod {
@@ -39,20 +37,7 @@ public class MedievalStructuresMod {
             VillagerInit.registerPOIs();
             LOGGER.info("=== Medieval Structures Debug ===");
             
-            // Проверяем все компоненты
-           if (VillagerInit.HERMIT.isPresent()) {
-    LOGGER.info("✓ Профессия зарегистрирована: {}", VillagerInit.HERMIT.getId());
-    
-    VillagerProfession profession = VillagerInit.HERMIT.get();
-
-    var jobSiteHolder = profession.heldJobSite();
-    LOGGER.info("  - Job site predicate: {}", jobSiteHolder);
-    LOGGER.info("  - POI Key: {}", VillagerInit.HERMIT_POI.getKey());
-}
             
-            // Проверяем в реестрах Forge
-            LOGGER.info("Все POI в реестре: {}", ForgeRegistries.POI_TYPES.getKeys());
-            LOGGER.info("Все профессии в реестре: {}", ForgeRegistries.VILLAGER_PROFESSIONS.getKeys());
         });
     }
 
