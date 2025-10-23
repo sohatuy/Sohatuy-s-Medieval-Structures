@@ -34,8 +34,7 @@ public class MedievalStructuresMod {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            VillagerInit.registerPOIs();
-            LOGGER.info("=== Medieval Structures Debug ===");
+            LOGGER.info("Medieval Structures Starting");
             
             
         });
@@ -43,7 +42,7 @@ public class MedievalStructuresMod {
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        
+
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

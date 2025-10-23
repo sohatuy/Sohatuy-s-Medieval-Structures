@@ -20,7 +20,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;
 
 public class HermitsTable extends Block {
-    // Добавляем свойство направления
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
     public HermitsTable() {
@@ -34,20 +33,17 @@ public class HermitsTable extends Block {
                 .setValue(FACING, Direction.NORTH));
     }
 
-    // Создаем состояние блока при установке
     @Override
     public BlockState getStateForPlacement(@Nonnull BlockPlaceContext context) {
         return this.defaultBlockState()
                 .setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
-    // Регистрируем свойства блока
     @Override
     protected void createBlockStateDefinition(@Nonnull StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
 
-    // Добавляем вращение для визуального отображения
     @Override
     public BlockState rotate(@Nonnull BlockState state, @Nonnull Rotation rotation) {
         return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));

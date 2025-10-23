@@ -17,7 +17,6 @@ public class VillagerInit {
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS = 
         DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, MedievalStructuresMod.MODID);
 
-    // ИСПРАВЛЕНО: Используем Supplier для ленивой инициализации
     public static final RegistryObject<PoiType> HERMIT_POI = POI_TYPES.register("hermit_poi", 
         () -> new PoiType(
             ImmutableSet.copyOf(BlockInit.HERMITS_TABLE.get().getStateDefinition().getPossibleStates()), 
@@ -34,22 +33,4 @@ public class VillagerInit {
             ImmutableSet.of(),
             SoundEvents.VILLAGER_WORK_ARMORER
         ));
-
-    public static void registerPOIs() {
-        final org.apache.logging.log4j.Logger LOGGER = org.apache.logging.log4j.LogManager.getLogger();
-        try {
-            // Принудительно загружаем POI в реестр
-            PoiType poiType = HERMIT_POI.get();
-            LOGGER.info("POI 'hermit_poi' успешно зарегистрирован: {}", poiType);
-            
-            // Проверяем связанный блок
-            if (BlockInit.HERMITS_TABLE.isPresent()) {
-                LOGGER.info("Связанный блок: {}", BlockInit.HERMITS_TABLE.getId());
-            }
-            
-        } catch (Exception e) {
-            LOGGER.error("Ошибка при регистрации POI: {}", e.getMessage());
-            e.printStackTrace();
-        }
-    }
 }

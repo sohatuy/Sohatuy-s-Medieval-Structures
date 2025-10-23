@@ -57,33 +57,33 @@ public class ModVillagerTrades {
                 new ItemStack(Items.EMERALD, 4),
                 ItemStack.EMPTY,
                 new ItemStack(ENIGMATIC_RING_IRON, 1),
-                15, // maxUses - максимальное использование
-                10, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                15, // максимальное использование
+                10, // опыт
+                0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 3),
                 ItemStack.EMPTY,
                 new ItemStack(FURNITURE_WOODEN_CHAIR_OAK, 1),
-                30, // maxUses - максимальное использование
-                8, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                30, // максимальное использование
+                8, // опыт
+                0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 2),
                 ItemStack.EMPTY,
                 new ItemStack(ALCOCRAFT_MUG, 4),
-                15, // maxUses - максимальное использование
-                5, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                15, // максимальное использование
+                5, // опыт
+                0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 1),
                 ItemStack.EMPTY,
                 new ItemStack(Items.BREAD, 3),
-                20, // maxUses - максимальное использование
-                5, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                20, // максимальное использование
+                5, // опыт
+                0.01f // множитель цены
             ));
             
 
@@ -91,83 +91,83 @@ public class ModVillagerTrades {
                 new ItemStack(Items.EMERALD, 3),
                 ItemStack.EMPTY,
                 new ItemStack(IRON_KNIFE, 1),
-                8, // maxUses - максимальное использование
-                15, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                8, // максимальное использование
+                15, // опыт
+                0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 3),
                 ItemStack.EMPTY,
                 new ItemStack(Items.BLAST_FURNACE, 1),
-                10, // maxUses - максимальное использование
-                10, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                10, // максимальное использование
+                10, // опыт
+                0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 1),
                 ItemStack.EMPTY,
                 new ItemStack(CUT_BOARD, 2),
-                15, // maxUses - максимальное использование
-                8, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                15, // максимальное использование
+                8, // опыт
+                0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 1),
                 ItemStack.EMPTY,
                 new ItemStack(CABBAGE, 3),
-                25, // maxUses - максимальное использование
-                5, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                25, // максимальное использование
+                5, // опыт
+                0.01f // множитель цены
             ));
 
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 2),
                 ItemStack.EMPTY,
                 new ItemStack(Items.GLASS_BOTTLE, 4),
-                20, // maxUses - максимальное использование
-                5, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                20, // максимальное использование
+                5, // опыт
+                0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 3),
                 ItemStack.EMPTY,
                 new ItemStack(Items.HOPPER, 1),
-                10, // maxUses - максимальное использование
-                15, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                10, // максимальное использование
+                15, // опыт
+                0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 5),
                 ItemStack.EMPTY,
                 new ItemStack(GOLDEN_RING, 1),
-                8, // maxUses - максимальное использование
-                20, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                8, // максимальное использование
+                20, // опыт
+                0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 7),
                 ItemStack.EMPTY,
                 new ItemStack(MAGNET_RING, 1),
-                8, // maxUses - максимальное использование
-                25, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                8, // максимальное использование
+                25, // опыт
+                0.01f // множитель цены
             ));
 
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 4),
                 ItemStack.EMPTY,
                 new ItemStack(GOLD_CHEST, 1),
-                8, // maxUses - максимальное использование
-                20, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                8, // максимальное использование
+                20, // опыт
+                0.01f // множитель цены
             ));
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 7),
                 ItemStack.EMPTY,
                 new ItemStack(IRON_RAPIER, 1),
-                5, // maxUses - максимальное использование
-                25, // xp - опыт
-                0.01f // priceMultiplier - множитель цены
+                5, // максимальное использование
+                25, // опыт
+                0.01f // множитель цены
             ));
         }
     }
