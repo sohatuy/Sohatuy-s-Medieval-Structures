@@ -33,4 +33,22 @@ public class VillagerInit {
             ImmutableSet.of(),
             SoundEvents.VILLAGER_WORK_ARMORER
         ));
+
+        
+        public static final RegistryObject<PoiType> TAVERNER_POI = POI_TYPES.register("taverners_poi", 
+        () -> new PoiType(
+            ImmutableSet.copyOf(BlockInit.TAVERNERS_TABLE.get().getStateDefinition().getPossibleStates()), 
+            1, 
+            1
+        ));
+
+    public static final RegistryObject<VillagerProfession> TAVERNER =
+        VILLAGER_PROFESSIONS.register("taverner", () -> new VillagerProfession(
+            "taverner",
+            holder -> holder.is(TAVERNER_POI.getKey()),
+            holder -> holder.is(TAVERNER_POI.getKey()),
+            ImmutableSet.of(),
+            ImmutableSet.of(),
+            SoundEvents.VILLAGER_WORK_ARMORER
+        ));
 }

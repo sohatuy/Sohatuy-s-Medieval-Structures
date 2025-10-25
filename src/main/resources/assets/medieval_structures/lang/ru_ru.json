@@ -8,6 +8,9 @@
     "advancements.medieval_structures.adv3.title":"Время торговать!",
     "advancements.medieval_structures.adv3.description":"Найдите замок",
     "block.medieval_structures.hermits_table":"Стол Отшельника",
+    "block.medieval_structures.taverners_table":"Стол Тавернщика",
     "entity.minecraft.villager.medieval_structures.hermit": "Отшельник",
-    "entity.minecraft.villager.hermit": "Отшельник"
+    "entity.minecraft.villager.hermit": "Отшельник",
+    "entity.minecraft.villager.medieval_structures.taverner": "Тавернщик",
+    "entity.minecraft.villager.taverner": "Тавернщик"
 }

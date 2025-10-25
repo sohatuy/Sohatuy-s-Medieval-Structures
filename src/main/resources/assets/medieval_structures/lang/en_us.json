@@ -8,6 +8,9 @@
     "advancements.medieval_structures.adv3.title":"Trading time!",
     "advancements.medieval_structures.adv3.description":"Find a castle",
     "block.medieval_structures.hermits_table":"Hermits table",
+    "block.medieval_structures.taverners_table":"Taverners table",
     "entity.minecraft.villager.medieval_structures.hermit": "Hermit",
-    "entity.minecraft.villager.hermit": "Hermit"
+    "entity.minecraft.villager.hermit": "Hermit",
+    "entity.minecraft.villager.medieval_structures.taverner": "Taverner",
+    "entity.minecraft.villager.taverner": "Taverner"
 }
