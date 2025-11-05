@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "translate": "advancements.medieval_structures.root.title",
+            "obfuscated": false
+        },
+        "description": {
+            "translate": "advancements.medieval_structures.root.description"
+        },
+        "icon": {
+            "item": "minecraft:blaze_powder"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "welcome": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

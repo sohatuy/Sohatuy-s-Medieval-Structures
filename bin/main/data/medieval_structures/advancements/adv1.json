@@ -1,0 +1,93 @@
+{
+    "parent": "medieval_structures:root",
+    "criteria": {
+        "tavern_plains": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:tavern_plains"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "tavern_spruce": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:tavern_savanna"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "tavern_taiga": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:tavern_taiga"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "tavern_jungle": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:tavern_jungle"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.medieval_structures.adv1.description"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:campfire"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.medieval_structures.adv1.title"
+        }
+    },
+    "requirements": [
+        [
+            "tavern_plains",
+            "tavern_spruce",
+            "tavern_taiga",
+            "tavern_jungle"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

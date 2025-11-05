@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "medieval_structures:tavern_plains",
+    "medieval_structures:tavern_jungle",
+    "medieval_structures:tavern_savanna",
+    "medieval_structures:tavern_taiga"
+  ]
+}

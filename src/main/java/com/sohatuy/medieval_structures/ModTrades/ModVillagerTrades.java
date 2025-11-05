@@ -58,7 +58,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(ENIGMATIC_RING_IRON, 1),
                 15, // максимальное использование
-                10, // опыт
+                1, // опыт
                 0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
@@ -66,7 +66,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(FURNITURE_WOODEN_CHAIR_OAK, 1),
                 30, // максимальное использование
-                8, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
@@ -74,7 +74,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(ALCOCRAFT_MUG, 4),
                 15, // максимальное использование
-                5, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
@@ -82,7 +82,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.BREAD, 3),
                 20, // максимальное использование
-                5, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             
@@ -92,7 +92,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(IRON_KNIFE, 1),
                 8, // максимальное использование
-                15, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
@@ -100,7 +100,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.BLAST_FURNACE, 1),
                 10, // максимальное использование
-                10, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
@@ -108,7 +108,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(CUT_BOARD, 2),
                 15, // максимальное использование
-                8, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
@@ -116,7 +116,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(CABBAGE, 3),
                 25, // максимальное использование
-                5, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
 
@@ -125,7 +125,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.GLASS_BOTTLE, 4),
                 20, // максимальное использование
-                5, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -133,7 +133,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.HOPPER, 1),
                 10, // максимальное использование
-                15, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -141,7 +141,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(GOLDEN_RING, 1),
                 8, // максимальное использование
-                20, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -149,7 +149,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(MAGNET_RING, 1),
                 8, // максимальное использование
-                25, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
 
@@ -158,7 +158,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(GOLD_CHEST, 1),
                 8, // максимальное использование
-                20, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
@@ -166,7 +166,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(IRON_RAPIER, 1),
                 5, // максимальное использование
-                25, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
         }
@@ -215,7 +215,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.EMERALD, 1),
                 20, // максимальное использование
-                10, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
@@ -223,7 +223,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.EMERALD, 1),
                 20, // максимальное использование
-                10, // опыт
+                1, // опыт
                 0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
@@ -231,7 +231,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.COOKED_MUTTON, 1),
                 15, // максимальное использование
-                15, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
@@ -239,7 +239,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(HAM, 2),
                 15, // максимальное использование
-                15, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
 
@@ -249,7 +249,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(KVASS, 1),
                 15, // максимальное использование
-                15, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
@@ -257,7 +257,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.EMERALD, 2),
                 20, // максимальное использование
-                8, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
@@ -265,7 +265,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(MAGNET_PILSNER, 1),
                 20, // максимальное использование
-                8, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
@@ -273,14 +273,14 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(CHICKEN_SOUP, 1),
                 10, // максимальное использование
-                10, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 2),
                 ItemStack.EMPTY,
                 new ItemStack(ICE_BEER, 1),
-                20, // максимальное использование
+                3, // максимальное использование
                 8, // опыт
                 0.01f // множитель цены
             ));
@@ -288,7 +288,7 @@ public class ModVillagerTrades {
                 new ItemStack(Items.EMERALD, 2),
                 ItemStack.EMPTY,
                 new ItemStack(EGG_SANDWICH, 1),
-                15, // максимальное использование
+                2, // максимальное использование
                 15, // опыт
                 0.01f // множитель цены
             ));
@@ -298,7 +298,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(Items.RABBIT_STEW, 1),
                 20, // максимальное использование
-                15, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -306,7 +306,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(DROWNED_ALE, 1),
                 20, // максимальное использование
-                10, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -314,7 +314,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(MEAD, 1),
                 20, // максимальное использование
-                10, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -322,7 +322,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(ROAST_CHICKEN_BLOCK, 1),
                 15, // максимальное использование
-                12, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -330,7 +330,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(HONEY_GLAZED_HAM, 1),
                 10, // максимальное использование
-                18, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -338,7 +338,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(NIGHT_RAUCH, 1),
                 20, // максимальное использование
-                10, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -346,7 +346,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(LEPRECHAUN_CIDER, 1),
                 20, // максимальное использование
-                10, // опыт
+                2, // опыт
                 0.01f // множитель цены
             ));
             trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
@@ -354,7 +354,7 @@ public class ModVillagerTrades {
                 ItemStack.EMPTY,
                 new ItemStack(SUN_PALE_ALE, 1),
                 20, // максимальное использование
-                12, // опыт
+                3, // опыт
                 0.01f // множитель цены
             ));
         }

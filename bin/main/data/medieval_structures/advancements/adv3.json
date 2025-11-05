@@ -1,0 +1,93 @@
+{
+    "parent": "medieval_structures:root",
+    "criteria": {
+        "castle_plains": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:castle_plains"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "castle_spruce": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:castle_spruce"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "castle_taiga": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:castle_taiga"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        },
+        "castle_jungle": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structure": "medieval_structures:castle_jungle"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancements.medieval_structures.adv3.description"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "minecraft:stone_bricks"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.medieval_structures.adv3.title"
+        }
+    },
+    "requirements": [
+        [
+            "castle_plains",
+            "castle_spruce",
+            "castle_taiga",
+            "castle_jungle"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

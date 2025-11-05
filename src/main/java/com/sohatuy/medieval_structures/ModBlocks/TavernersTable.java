@@ -28,7 +28,6 @@ public class TavernersTable extends Block{
                 .destroyTime(1)
                 .sound(SoundType.STONE));
         
-        // Устанавливаем начальное состояние по умолчанию
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH));
     }

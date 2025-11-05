@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "medieval_structures:block/taverners_table" },
+    "facing=east":  { "model": "medieval_structures:block/taverners_table", "y": 90 },
+    "facing=south": { "model": "medieval_structures:block/taverners_table", "y": 180 },
+    "facing=west":  { "model": "medieval_structures:block/taverners_table", "y": 270 }
+  }
+}

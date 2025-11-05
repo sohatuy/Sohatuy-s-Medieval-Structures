@@ -1,0 +1,28 @@
+{
+  "parent": "medieval_structures:block/hermits_table",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 75, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -50, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 75, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 1, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"gui": {
+			"rotation": [25, -45, 0],
+			"scale": [0.65, 0.65, 0.65]
+		}
+	}
+}
