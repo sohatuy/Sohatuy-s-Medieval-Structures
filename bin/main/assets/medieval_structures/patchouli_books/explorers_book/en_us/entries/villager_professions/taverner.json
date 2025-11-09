@@ -1,0 +1,16 @@
+{
+    "name": "Taverner",
+    "icon": "minecraft:cooked_chicken",
+    "category": "medieval_structures:villager_proffesions",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Taverner - a new villager, that naturally spawns in taverns and sells you some kinds of food and drinks from other mods"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"Taverner's trades",
+            "text": "Raw beef$(br)Drinks$(br)Food from Farmer's Delight$(br)"
+        }
+    ]
+}

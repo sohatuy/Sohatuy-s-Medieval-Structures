@@ -1,0 +1,17 @@
+{
+    "name": "Стол тавернщика",
+    "icon": "medieval_structures:taverners_table",
+    "category": "medieval_structures:blocks",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "medieval_structures:taverners_table",
+            "text":"Стол тавернщика - это блок, который дает жителю новую проффесию:Тавернцик."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Крафт",
+            "recipe":"medieval_structures:taverners_table"
+        }
+    ]
+}

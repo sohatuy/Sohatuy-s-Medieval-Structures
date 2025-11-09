@@ -1,0 +1,17 @@
+{
+    "name": "Hermits Houses",
+    "icon": "medieval_structures:hermits_table",
+    "category": "medieval_structures:structures",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Hermits House is a medieval structure, where lives a Hermit, who sells you his creations"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"4 types of Hermit Houses:",
+            "text": "Hermits House Plains.$(br)Hermits House Savanna$(br)Hermits House Taiga$(br)Hermits House Jungle"
+
+        }
+    ]
+}

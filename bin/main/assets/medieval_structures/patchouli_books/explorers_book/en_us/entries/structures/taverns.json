@@ -1,0 +1,17 @@
+{
+    "name": "Taverns",
+    "icon": "medieval_structures:taverners_table",
+    "category": "medieval_structures:structures",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Tavern is a medieval structure, where you can rest in a room and trade with a Taverner, that owns this place"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"4 types of taverns:",
+            "text": "Tavern Plains.$(br)Tavern Savanna$(br)Tavern Taiga$(br)Tavern Jungle"
+
+        }
+    ]
+}

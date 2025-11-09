@@ -9,6 +9,8 @@
     "advancements.medieval_structures.adv3.description":"Find a castle",
     "block.medieval_structures.hermits_table":"Hermits table",
     "block.medieval_structures.taverners_table":"Taverners table",
+    "item.medieval_structures.explorers_book.name":"Explorers Book",
+    "item.medieval_structures.explorers_book.landing_text":"This book - is a guide for Sohatuy's Medieval Structures mod, where you can read about mod structures, items and blocks",
     "entity.minecraft.villager.medieval_structures.hermit": "Hermit",
     "entity.minecraft.villager.hermit": "Hermit",
     "entity.minecraft.villager.medieval_structures.taverner": "Taverner",

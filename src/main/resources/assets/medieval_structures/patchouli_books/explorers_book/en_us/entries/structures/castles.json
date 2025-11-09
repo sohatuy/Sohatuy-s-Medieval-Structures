@@ -1,0 +1,17 @@
+{
+    "name": "Castles",
+    "icon": "minecraft:stone_bricks",
+    "category": "medieval_structures:structures",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Castle is a medieval structure, that is like a market with some kind of protection"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"4 types of castles:",
+            "text": "Castle Plains.$(br)Castle Savanna$(br)Castle Taiga$(br)Castle Jungle"
+
+        }
+    ]
+}

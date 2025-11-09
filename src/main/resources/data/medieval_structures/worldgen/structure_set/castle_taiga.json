@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "medieval_structures:castle_taiga",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 36,
+    "separation": 34,
+    "salt": 7534234
+  }
+}

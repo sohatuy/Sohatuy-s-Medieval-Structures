@@ -1,0 +1,16 @@
+{
+    "name": "Отшельник",
+    "icon": "minecraft:emerald",
+    "category": "medieval_structures:villager_proffesions",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Отшельник - это новый житель, который живет в домике отшельника и продает тебе свои творения, которые создает своими руками"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"Торги отшельника",
+            "text": "Деревянные стулья$(br)Кольца$(br)Кружки$(br)"
+        }
+    ]
+}

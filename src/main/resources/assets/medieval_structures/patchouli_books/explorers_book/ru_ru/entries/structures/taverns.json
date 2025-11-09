@@ -1,0 +1,17 @@
+{
+    "name": "Таверна",
+    "icon": "medieval_structures:Тавернаers_table",
+    "category": "medieval_structures:structures",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Таверна - это средневековая структура, где ты можешь отдохнуть в комнатке и поторговать с Тавернщиком, который владеет этим местом"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"4 типа таверн:",
+            "text": "Таверна Равнин.$(br)Таверна Саванн$(br)Таверна Тайги$(br)Таверна Джунглей"
+
+        }
+    ]
+}

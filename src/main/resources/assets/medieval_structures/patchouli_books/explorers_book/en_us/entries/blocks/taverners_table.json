@@ -1,0 +1,17 @@
+{
+    "name": "Taverners Table",
+    "icon": "medieval_structures:taverners_table",
+    "category": "medieval_structures:blocks",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "medieval_structures:taverners_table",
+            "text":"Taverners table - block, that gives a villager a new profession - Taverner."
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Craft",
+            "recipe":"medieval_structures:taverners_table"
+        }
+    ]
+}

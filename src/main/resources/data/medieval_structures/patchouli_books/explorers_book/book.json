@@ -1,0 +1,7 @@
+{
+    "name": "item.medieval_structures.explorers_book.name",
+    "landing_text": "item.medieval_structures.explorers_book.landing_text",
+    "version": 1,
+    "creative_tab": "minecraft:tools_and_utilities",
+    "use_resource_pack": true
+}

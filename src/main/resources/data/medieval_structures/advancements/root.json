@@ -1,8 +1,7 @@
 {
     "display": {
         "title": {
-            "translate": "advancements.medieval_structures.root.title",
-            "obfuscated": false
+            "translate": "advancements.medieval_structures.root.title"
         },
         "description": {
             "translate": "advancements.medieval_structures.root.description"
@@ -20,5 +19,8 @@
         "welcome": {
             "trigger": "minecraft:tick"
         }
+    },
+    "rewards": {
+        "loot": ["medieval_structures:root_loot"]
     }
 }

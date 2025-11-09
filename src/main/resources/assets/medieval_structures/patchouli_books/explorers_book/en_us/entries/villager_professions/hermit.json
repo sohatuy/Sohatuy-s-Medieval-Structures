@@ -1,0 +1,16 @@
+{
+    "name": "Hermit",
+    "icon": "minecraft:emerald",
+    "category": "medieval_structures:villager_proffesions",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Hermit - a new villager, that naturally spawns in hermits houses and sells you his creations, that he makes himself"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"Hermit's trades",
+            "text": "Wooden Chairs$(br)Rings$(br)Mugs$(br)"
+        }
+    ]
+}

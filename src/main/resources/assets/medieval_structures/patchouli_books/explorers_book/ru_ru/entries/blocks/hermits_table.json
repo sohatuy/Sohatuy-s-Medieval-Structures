@@ -1,0 +1,17 @@
+{
+    "name": "Стол отшельника",
+    "icon": "medieval_structures:hermits_table",
+    "category": "medieval_structures:blocks",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "medieval_structures:hermits_table",
+            "text":"Стол отшельника = это блок, который дает жителю новую проффесию:Отшельник"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": "Крафт",
+            "recipe":"medieval_structures:hermits_table"
+        }
+    ]
+}

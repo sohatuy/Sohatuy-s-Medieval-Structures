@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "medieval_structures:castle_plains"
+    "medieval_structures:castle_plains",
+    "medieval_structures:castle_taiga"
   ]
 }

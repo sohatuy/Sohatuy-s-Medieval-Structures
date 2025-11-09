@@ -1,0 +1,16 @@
+{
+    "name": "Тавернщик",
+    "icon": "minecraft:chicken",
+    "category": "medieval_structures:villager_proffesions",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Тавернщик - это новый житель, котрый живет в таверне, где продает тебе еду из других модов"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"Торги тавернщика",
+            "text": "Сырая говядина$(br)Напитки$(br)Еда из Farmer's Delight$(br)"
+        }
+    ]
+}

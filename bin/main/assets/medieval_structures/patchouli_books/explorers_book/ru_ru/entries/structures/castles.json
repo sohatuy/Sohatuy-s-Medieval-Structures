@@ -1,0 +1,17 @@
+{
+    "name": "Замок",
+    "icon": "minecraft:stone_bricks",
+    "category": "medieval_structures:structures",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Замок - это средневековая структура, котрая похоже на небольшой рынок, но с некоторой защитой"
+        },
+        {
+            "type": "patchouli:text",
+            "title":"4 типа Замков:",
+            "text": "Замок Равнин.$(br)Замок Саванны$(br)Замок Тайги$(br)Замок Джунглей"
+
+        }
+    ]
+}

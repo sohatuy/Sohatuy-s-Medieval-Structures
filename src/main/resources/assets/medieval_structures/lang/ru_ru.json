@@ -9,6 +9,8 @@
     "advancements.medieval_structures.adv3.description":"Найдите замок",
     "block.medieval_structures.hermits_table":"Стол Отшельника",
     "block.medieval_structures.taverners_table":"Стол Тавернщика",
+    "item.medieval_structures.explorers_book.name":"Книга Исследователя",
+    "item.medieval_structures.explorers_book.landing_text":"Это - книга гайд по Sohatuy's Medieval Structures, в которой ты можешь узнать о структурах, блоках, проффессиях и предметах из этого мода",
     "entity.minecraft.villager.medieval_structures.hermit": "Отшельник",
     "entity.minecraft.villager.hermit": "Отшельник",
     "entity.minecraft.villager.medieval_structures.taverner": "Тавернщик",
