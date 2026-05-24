@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "patchouli:guide_book",
+          "name": "medieval_structures:explorers_book",
           "functions": [
             {
               "function": "minecraft:set_count",

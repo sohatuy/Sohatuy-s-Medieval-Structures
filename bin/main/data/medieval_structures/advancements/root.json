@@ -19,8 +19,5 @@
         "welcome": {
             "trigger": "minecraft:tick"
         }
-    },
-    "rewards": {
-        "loot": ["medieval_structures:root_loot"]
     }
 }
