@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "medieval_structures:campfire_plains",
+    "medieval_structures:campfire_taiga",
+    "medieval_structures:campfire_savanna",
+    "medieval_structures:campfire_jungle"
+  ]
+}

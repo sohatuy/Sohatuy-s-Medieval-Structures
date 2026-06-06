@@ -1,0 +1,15 @@
+{
+  "name": "medieval_structures:campfire_taiga",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "medieval_structures:campfire_taiga",
+        "projection": "rigid",
+        "processors": []
+      }
+    }
+  ]
+}

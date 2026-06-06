@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "medieval_structures:campfire_savanna",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 31,
+    "salt": 512749214
+  }
+}
