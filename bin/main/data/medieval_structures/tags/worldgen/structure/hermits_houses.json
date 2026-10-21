@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "medieval_structures:hermits_house_plains",
-    "medieval_structures:hermits_house_taiga",
-    "medieval_structures:hermits_house_savanna",
-    "medieval_structures:hermits_house_jungle"
-  ]
-}
